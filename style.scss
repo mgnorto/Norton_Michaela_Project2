@@ -1,0 +1,65 @@
+@mixin default {
+    position: relative;
+    display: inline-block;
+}
+
+
+@font-face{
+    font-family: "header";
+    src: url("fonts/harryp.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "regular";
+    src: url("fonts/lumos.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: "regular";
+    color: white;
+    background-color: black;
+    h1{
+        font-family: "header";
+        font-size: 60px;
+        text-align: center;
+        
+    }
+    h3, h2{
+        text-align: center;
+    }
+    .hidden{
+       display: none;
+    }
+    #home{
+        
+    }
+    .names{ 
+        @include default;
+        top: 5px;
+    }
+    .picture2{
+        display: none;
+    }
+    .picContainer{
+        @include default;
+        border: 1px solid white;
+        width: 250px;
+        height: 300px;
+    }
+    .question{
+        height: auto;
+        position: relative;
+    }
+    .clues{
+        @include default;
+        padding: 20px;
+   
+    }
+    .nameinput{
+        @include default; 
+    }
+}

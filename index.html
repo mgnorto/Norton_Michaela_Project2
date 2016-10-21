@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Guess Who</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        $(document).ready(function(){
+            
+            
+});
+    
+    </script>
+</head>
+
+<body>
+    <div id="home">
+        <h1> Guess Who: Hogwarts Edition </h1>
+        <h3> Lets test your knowledge of the students of Hogwarts School of Withcraft and Wizardry!</h3>
+        <center><img src="images/cast.jpg"></center>
+        <hr>
+        <form action="javascript:submitForm();">
+            <feildset>
+                <h2>personal info:</h2>
+                <p>please enter your personal info in the form below</p>
+                <input type="text" name="firstname" placeholder="first name"> </feildset>
+            <input id="namesubmit" type="submit"> </form>
+        <hr> </div>
+    <!--look here to copy-->
+    <div id="level1" class="hidden">
+        <h1>Here's Level 1!</h1>
+        <h3>Name That Character</h3>
+        <form action="javascript:level1Submit();">
+            <div id="q1" class="question">
+                <div class="picture" id="pic1"> <img src="images/dumbledore.jpg" width=250px height=300px> </div>
+                <div class="names">
+                    <select id="dumbled">
+                        <option value="snape">Professor Snape</option>
+                        <option value="dumble">Professor Dumbledore</option>
+                        <option value="hermo">Hermoine Granger</option>
+                        <option value="gin">Ginny Weasley</option>
+                        <option value="mcgono">Professor Mcgonagall</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div id="q2" class="question">
+                <div class="picture" id="pic2"> <img src="images/snape.jpg" width=250px height=300px></div>
+                <div class="names">
+                    <select id="sev">
+                        <option value="snape">Professor Snape</option>
+                        <option value="dumble">Professor Dumbledore</option>
+                        <option value="hermo">Hermoine Granger</option>
+                        <option value="gin">Ginny Weasley</option>
+                        <option value="mcgono">Professor Mcgonagall</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div id="q3" class="question">
+                <div class="picture" id="pic3"> <img src="images/ginny.jpg" width=250px height=300px> </div>
+                <div class="names">
+                    <select id="ginny">
+                        <option value="snape">Professor Snape</option>
+                        <option value="dumble">Professor Dumbledore</option>
+                        <option value="hermo">Hermoine Granger</option>
+                        <option value="gin">Ginny Weasley</option>
+                        <option value="mcgono">Professor Mcgonagall</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div id="q4" class="question">
+                <div class="picture" id="pic4"> <img src="images/hermoine.jpg" width=250px height=300px> </div>
+                <div class="names">
+                    <select id="hermy">
+                        <option value="snape">Professor Snape</option>
+                        <option value="dumble">Professor Dumbledore</option>
+                        <option value="hermo">Hermoine Granger</option>
+                        <option value="gin">Ginny Weasley</option>
+                        <option value="mcgono">Professor Mcgonagall</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div id="q5" class="question">
+                <div class="picture" id="pic5"> <img src="images/mcgono.jpg" width=250px height=300px> </div>
+                <div class="names">
+                    <select id="micky">
+                        <option value="snape">Professor Snape</option>
+                        <option value="dumble">Professor Dumbledore</option>
+                        <option value="hermo">Hermoine Granger</option>
+                        <option value="gin">Ginny Weasley</option>
+                        <option value="mcgono">Professor Mcgonagall</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <input type="submit" id="level1submit"> </form>
+    </div>
+    <!-- START OF LEVEL 2-->
+    <!-- add class="hidden" back-->
+    <div id="level2" class="hidden">
+        <h1>Here's Level 2!</h1>
+        <h2>Name Bank:  </h2>
+            <h3>Harry Potter <br>
+            Lord Voldemort <br>
+            Neville Longbottom <br>
+            Draco Malfoy <br>
+            Ron Weasley </h3><br>
+
+       
+        
+        <hr>
+        <br>
+        
+        <form action="javascript:level2submit()">
+            <div id="q6" class="question">
+            <div class="picContainer">
+                <div class="picture2" id="pic6"><img src="images/neville.jpg" width=250px height=300px></div>
+            </div>
+                <div class="clues" id="clue6">
+                    <ul>
+                        <li> My parents were in the Order of the Phoenix.</li>
+                        <li> I have a pet toad.</li>
+                        <li> I have a special talent for plants.</li>
+                        <li>
+<input type="radio" name="nev" value="harry">Harry Potter
+<input type="radio" name="nev" value="lord">Voldemort
+<input type="radio" name="nev" value="neville">Neville
+<input type="radio" name="nev" value="malfoy">Malfoy
+<input type="radio" name="nev" value="weasley">Weasley
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div id="q7" class="question">
+                <div class="picContainer">
+                <div class="picture2" id="pic7"> <img src="images/voldemort.jpg" width=250px height=300px></div>
+                </div>
+                <div class="clues" id="clue7">
+                    <ul>
+                        <li>I have a certain disdain for muggles.</li>
+                        <li>I was in the Slytherin House.</li>
+                        <li> People are afraid to say my name out loud.</li>
+                        <li>
+                           <input type="radio" name="nev" value="harry">Harry Potter
+<input type="radio" name="vol" value="lord">Voldemort
+<input type="radio" name="vol" value="neville">Neville
+<input type="radio" name="vol" value="malfoy">Malfoy
+<input type="radio" name="vol" value="weasley">Weasley
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div id="q8" class="question">
+                <div class="picContainer">
+                <div class="picture2" id="pic8"> <img src="images/draco.jpg" width=250px height=300px></div>
+                </div>
+                <div class="clues" id="clue8">
+                    <ul>
+                        <li> Hermoine punched me across the face.</li>
+                        <li> I was once turned into a ferret.</li>
+                        <li> I'm related to a death eater.</li>
+                        <li>
+<input type="radio" name="drake" value="harry">Harry Potter
+<input type="radio" name="drake" value="lord">Voldemort
+<input type="radio" name="drake" value="neville">Neville
+<input type="radio" name="drake" value="malfoy">Malfoy
+<input type="radio" name="drake" value="weasley">Weasley
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div id="q9" class="question">
+                <div class="picContainer">
+                    <div class="picture2" id="pic9"> <img src="images/ron.jpg" width=250px height=300px> </div>
+                </div>
+                <div class="clues" id="clue9">
+                    <ul>
+                        <li> I have five older brothers and one younger sister.</li>
+                        <li>Once, I threw up a bunch of slugs.</li>
+                        <li> I enjoy playing a regular or extreme game of chess in my spare time.</li>
+                        <li>
+<input type="radio" name="row" value="harry">Harry Potter
+<input type="radio" name="row" value="lord">Voldemort
+<input type="radio" name="row" value="neville">Neville
+<input type="radio" name="row" value="malfoy">Malfoy
+<input type="radio" name="row" value="weasley">Weasley
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div id="q10" class="question2">
+            <div class="picContainer">
+                <div class="picture" id="pic10"> <img src="images/harry.jpg" width=250px height=300px></div>
+            </div>
+                <div class="clues" id="clue10">
+                    <ul>
+                        <li> For a long time, my bedroom was a closet.</li>
+                        <li> My parents died when I was a baby.</li>
+                        <li> I am "The Chosen One."</li>
+                        <li>
+<input type="radio" name="harp" value="harry">Harry Potter
+<input type="radio" name="harp" value="lord">Voldemort
+<input type="radio" name="harp" value="neville">Neville
+<input type="radio" name="harp" value="malfoy">Malfoy
+<input type="radio" name="harp" value="weasley">Weasley
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <input type=submit id="level2submitbutton">
+        </form>
+    </div>
+</body>
+
+</html>

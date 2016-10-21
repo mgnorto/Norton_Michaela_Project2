@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "header";
+  src: url("fonts/harryp.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "regular";
+  src: url("fonts/lumos.ttf");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: "regular";
+  color: white;
+  background-color: black; }
+  body h1 {
+    font-family: "header";
+    font-size: 60px;
+    text-align: center; }
+  body h3, body h2 {
+    text-align: center; }
+  body .hidden {
+    display: none; }
+  body .names {
+    position: relative;
+    display: inline-block;
+    top: 5px; }
+  body .picture2 {
+    display: none; }
+  body .picContainer {
+    position: relative;
+    display: inline-block;
+    border: 1px solid white;
+    width: 250px;
+    height: 300px; }
+  body .question {
+    height: auto;
+    position: relative; }
+  body .clues {
+    position: relative;
+    display: inline-block;
+    padding: 20px; }
+  body .nameinput {
+    position: relative;
+    display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
